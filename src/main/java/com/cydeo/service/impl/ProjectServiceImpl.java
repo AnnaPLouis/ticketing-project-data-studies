@@ -68,7 +68,7 @@ public class ProjectServiceImpl implements ProjectService {
         //set id to the converted object
         convertedProject.setId(project1.getId());
         //set project status
-        convertedProject.setProjectStatus(project.getProjectStatus());
+        convertedProject.setProjectStatus(project1.getProjectStatus());
         //save the updated project in db
         projectRepository.save(convertedProject);
 
